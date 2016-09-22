@@ -2,9 +2,8 @@
 setlocal EnableDelayedExpansion
 
 if [%1]==[] goto usage
-set SDL_OPENSSL_DIR="C:\OpenSSL"
+set SDL_OPENSSL_DIR="C:\OpenSSL\openssl_win_x64"
 if exist %SDL_OPENSSL_DIR% goto msg
-
 set BUILD_TYPE=%1
 set LIBS_DIR="%SDL_ROOT_DIR%\src\3rd_party-static"
 set OPENSSL_SRC_DIR_NAME=openssl-1.0.2
